@@ -1,4 +1,3 @@
-
 export enum KeyWord {
   Sine = 'sin',
   Cosine = 'cos',
@@ -18,15 +17,7 @@ export enum KeyWord {
   summ = '∑',
   infinity = '∞',
   theta = 'θ',
-  integral = 'R'
+  integral = 'R',
+
+  deg = '°',
 }
-
-export const config = {
-  globalUpdateSpeed: 25,
-  alphaAngleStart: 0,
-  alphaAngleEnd: 360,
-
-  radius: 200,
-  x: 250,
-  y: 250,
-};

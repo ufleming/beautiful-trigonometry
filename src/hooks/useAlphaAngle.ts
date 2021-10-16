@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import { config } from 'config';
+import { useState } from 'react'
+import { appBaseConfig } from 'configs/appBaseConfig'
 
 export const useAlphaAngle = (): number => {
-  const [alphaAngle, changeAlphaAngle] = useState(config.alphaAngleStart);
+  const [alphaAngle, changeAlphaAngle] = useState(appBaseConfig.alphaAngleStart)
 
   setTimeout(
-    () => changeAlphaAngle((alphaAngle - 1) % config.alphaAngleEnd),
-    config.globalUpdateSpeed
-  );
+    () => changeAlphaAngle((alphaAngle - 1) % appBaseConfig.alphaAngleEnd),
+    appBaseConfig.globalUpdateSpeed
+  )
 
-  return alphaAngle;
-};
+  return alphaAngle
+}
