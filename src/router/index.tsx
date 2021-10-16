@@ -1,6 +1,6 @@
 import React from 'react'
-import { Route, Switch } from 'react-router';
-import { Scene } from 'containers/Scene';
+import { Route, Switch } from 'react-router'
+import { Scene } from 'containers/Scene'
 
 const routes = (
   <div>
@@ -8,6 +8,6 @@ const routes = (
       <Route exact path="/" component={Scene} />
     </Switch>
   </div>
-);
+)
 
 export default routes
