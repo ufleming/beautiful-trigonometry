@@ -1,8 +1,7 @@
 import React from 'react'
 import { Layer, Stage } from 'react-konva'
-import { PlaneCircleCoordinate } from 'components/PlaneCircleCoordinate'
+import { PlaneCircleCoordinate } from 'Scenes/PlaneCircleCoordinate'
 import { appBaseConfig } from 'configs/appBaseConfig'
-
 import { useWindowSize } from 'hooks/useWindowSize'
 import { SinLine } from "components/SinLine"
 import { CosLine } from "components/CosLine"
@@ -17,8 +16,8 @@ export const Scene = () => {
   const [windowWidth, windowHeight] = useWindowSize()
   const alphaAngle = useAlphaAngle()
   const P = useVariables(radius, x, y)
-  const cosP = useVariables(radius, x, y, 'x')
-  const sinP = useVariables(radius, x, y, 'y')
+  const cosP = useVariables(radius, x, y, 'y')
+  const sinP = useVariables(radius, x, y, 'x')
 
   return (
     <Stage width={windowWidth} height={windowHeight}>

@@ -1,23 +1,17 @@
+import type { CircleConfig } from 'konva/lib/shapes/Circle'
+import type { LineConfig } from 'konva/lib/shapes/Line'
 import { themeColors } from 'configs/theme'
 import { appBaseConfig } from 'configs/appBaseConfig'
 
 export const planeOffset = 15
 
-export const planeCircleConfig = {
-  strokeWidth: 8,
+export const planeCircleConfig: CircleConfig = {
   x: appBaseConfig.x,
   y: appBaseConfig.y,
-  stroke: '#999',
   radius: appBaseConfig.radius,
 }
 
-export const planeArrowLineConfig = {
+export const planeGuideLineConfig: LineConfig = {
   strokeWidth: 1,
-  stroke: themeColors.plane,
-}
-
-export const planeArrowConfig = {
-  pointerLength: 10,
-  pointerWidth: 8,
   fill: themeColors.plane,
 }

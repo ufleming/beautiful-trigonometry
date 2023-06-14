@@ -1,22 +1,15 @@
+import type { CircleConfig } from 'konva/lib/shapes/Circle'
+import type { LineConfig } from 'konva/lib/shapes/Line'
 import { themeColors } from 'configs/theme'
 import { lineBaseConfig, pointBaseConfig } from 'configs/appBaseConfig'
-import { KeyWord } from 'configs/KeyWord'
 
-export const sinLinePointsConfig = {
+export const sinLinePointsConfig: CircleConfig = {
   ...pointBaseConfig,
-  stroke: themeColors.sinColor,
-  fill: themeColors.sinColor,
+  stroke: themeColors.sinColor(),
+  fill: themeColors.sinColor(),
 }
 
-export const sinLineConfig = {
+export const sinLineConfig: LineConfig = {
   ...lineBaseConfig,
-  stroke: themeColors.sinColor,
-}
-
-export const sinLineTextConfig = {
-  text: KeyWord.Sine,
-  width: 40,
-  height: 20,
-  fill: themeColors.sinColor,
-  align: 'center'
+  stroke: themeColors.sinColor(),
 }
