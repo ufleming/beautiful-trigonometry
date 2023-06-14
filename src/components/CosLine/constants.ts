@@ -1,22 +1,15 @@
+import type { CircleConfig } from 'konva/lib/shapes/Circle'
+import type { LineConfig } from 'konva/lib/shapes/Line'
 import { themeColors } from 'configs/theme'
 import { lineBaseConfig, pointBaseConfig } from 'configs/appBaseConfig'
-import { KeyWord } from 'configs/KeyWord'
 
-export const cosPointsConfig = {
+export const cosPointsConfig: CircleConfig = {
   ...pointBaseConfig,
-  stroke: themeColors.cosColor,
-  fill: themeColors.cosColor,
+  stroke: themeColors.cosColor(),
+  fill: themeColors.cosColor(),
 }
 
-export const cosLineConfig = {
+export const cosLineConfig: LineConfig = {
   ...lineBaseConfig,
-  stroke: themeColors.cosColor,
-}
-
-export const cosLineTextConfig = {
-  text: KeyWord.Cosine,
-  width: 40,
-  height: 20,
-  fill: themeColors.cosColor,
-  align: 'center'
+  stroke: themeColors.cosColor(),
 }
