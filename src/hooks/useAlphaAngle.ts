@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { appBaseConfig } from 'configs/appBaseConfig'
+import { appBaseConfig } from '@/configs/appBaseConfig'
 
 export const useAlphaAngle = (): number => {
   const [alphaAngle, changeAlphaAngle] = useState(appBaseConfig.alphaAngleStart)

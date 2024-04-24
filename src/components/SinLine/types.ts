@@ -1,6 +1,6 @@
 import type { LocationCoordinates } from '@/types'
 
-export type HelperLineProps = {
-  alphaAngle: number
+export type SinLineProps = {
   P: LocationCoordinates
+  sinP: LocationCoordinates
 }
