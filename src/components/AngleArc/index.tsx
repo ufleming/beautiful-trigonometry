@@ -1,7 +1,7 @@
 import React from 'react'
 import { Arc, Circle } from 'react-konva'
 import { angleArcConfig, angleArcCircleBaseConfig } from './constants'
-import { AngleArcProps } from './types'
+import type { AngleArcProps } from './types'
 
 export const AngleArc = ({ alphaAngle }: AngleArcProps) => {
   const angle = Math.abs(alphaAngle)

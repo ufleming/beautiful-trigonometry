@@ -1,4 +1,4 @@
-import { appBaseConfig, lineBaseConfig, pointBaseConfig } from 'configs/appBaseConfig'
+import { appBaseConfig, lineBaseConfig, pointBaseConfig } from '@/configs/appBaseConfig'
 
 export const helpLinePointsConfig = {
   ...pointBaseConfig,

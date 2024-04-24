@@ -1,4 +1,4 @@
-import { appBaseConfig } from 'configs/appBaseConfig'
+import { appBaseConfig } from '@/configs/appBaseConfig'
 
 export const angleArcCircleBaseConfig = {
   x: appBaseConfig.x,
@@ -10,5 +10,5 @@ export const angleArcConfig = {
   innerRadius: appBaseConfig.radius / 15,
   outerRadius: appBaseConfig.radius / 22,
   clockwise: true,
-  fill: '#fff'
+  fill: '#fff',
 }

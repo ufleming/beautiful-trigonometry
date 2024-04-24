@@ -1,4 +1,4 @@
-import { useAlphaAngle } from 'hooks/useAlphaAngle'
+import { useAlphaAngle } from '@/hooks/useAlphaAngle'
 
 export const useVariables = (radius: number, x: number, y: number, freeze?: 'x' | 'y') => {
   const alphaAngle = useAlphaAngle()

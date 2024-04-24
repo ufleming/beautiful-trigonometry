@@ -1,8 +1,7 @@
 import React from 'react'
-import { Scene } from 'Scenes/MainScene'
+import { Scene } from '@/containers/Scene'
+import '@/index.css'
 
-import './base.css'
-
-const App = () => <Scene />
+const App = () => <Scene/>
 
 export default App
