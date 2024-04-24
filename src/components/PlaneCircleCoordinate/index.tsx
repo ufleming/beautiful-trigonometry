@@ -1,9 +1,8 @@
-import React from 'react'
 import { Circle } from 'react-konva'
 import { themeColors } from '@/configs/theme'
-import { CosArrow } from '@/components/PlaneCircleCoordinate/components/CosArrow'
+import { ArrowAxisY } from '@/components/PlaneCircleCoordinate/components/ArrowAxisY'
 import { planeCircleConfig } from './constants'
-import { SinArrow } from './components/SinArrow'
+import { ArrowAxisX } from './components/ArrowAxisX'
 
 export const PlaneCircleCoordinate = () => {
   const zeroPoint = () => (
@@ -16,8 +15,8 @@ export const PlaneCircleCoordinate = () => {
   return (
     <>
       <Circle {...planeCircleConfig} />
-      <SinArrow />
-      <CosArrow />
+      <ArrowAxisX />
+      <ArrowAxisY />
       {zeroPoint()}
     </>
   )

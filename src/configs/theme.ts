@@ -1,6 +1,6 @@
 export const themeColors = {
-  sinColor: '#F00',
-  cosColor: '#00F',
+  sinColor: '#80ff80',
+  cosColor: '#46c6ff',
   circle: '#000',
   plane: '#000',
   helpers: '#000',

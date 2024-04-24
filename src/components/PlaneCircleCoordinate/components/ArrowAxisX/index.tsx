@@ -1,4 +1,3 @@
-import React from 'react'
 import { Arrow, Line } from 'react-konva'
 import { useWindowSize } from '@/hooks/useWindowSize'
 import {
@@ -6,9 +5,9 @@ import {
   planeArrowConfig,
   planeArrowLineConfig,
   planeOffset,
-} from '../constants'
+} from '../../constants'
 
-export const SinArrow = () => {
+export const ArrowAxisX = () => {
   const [windowWidth] = useWindowSize()
   const { radius, x, y } = planeCircleConfig
   const { pointerWidth } = planeArrowConfig

@@ -1,13 +1,12 @@
-import React from 'react'
 import { Arrow, Line } from 'react-konva'
 import {
   planeCircleConfig,
   planeArrowConfig,
   planeArrowLineConfig,
   planeOffset,
-} from '../constants'
+} from '../../constants'
 
-export const CosArrow = () => {
+export const ArrowAxisY = () => {
   const { radius, x, y } = planeCircleConfig
   const { pointerLength } = planeArrowConfig
   const arrowStart = y - radius - planeOffset

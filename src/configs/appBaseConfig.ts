@@ -1,8 +1,7 @@
 export const appBaseConfig = {
-  globalUpdateSpeed: 25,
-  alphaAngleStart: 0,
+  globalUpdateSpeed: 50,
+  alphaAngleStart: -30,
   alphaAngleEnd: 360,
-
   radius: 200,
   x: 250,
   y: 250,

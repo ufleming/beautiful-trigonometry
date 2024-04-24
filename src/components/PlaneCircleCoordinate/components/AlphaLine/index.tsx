@@ -1,4 +1,3 @@
-import React from 'react'
 import { Circle, Line, Text } from 'react-konva'
 import { appBaseConfig } from '@/configs/appBaseConfig'
 import { KeyWord } from '@/configs/KeyWord'
@@ -8,7 +7,7 @@ import type { HelperLineProps } from './types'
 
 const { radius, x, y } = appBaseConfig
 
-export const HelpLine = ({ P, alphaAngle }: HelperLineProps) => {
+export const AlphaLine = ({ P, alphaAngle }: HelperLineProps) => {
   const { x: textX, y: textY } = useVariables(radius * 1.1, x, y)
   const angle = Math.abs(alphaAngle)
 

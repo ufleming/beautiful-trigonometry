@@ -15,7 +15,7 @@ export const sinLineConfig = {
 
 export const sinLineTextConfig = {
   text: KeyWord.Sine,
-  width: 40,
+  width: 25,
   height: 20,
   fill: themeColors.sinColor,
   align: 'center',
