@@ -1,4 +1,3 @@
-import React from 'react'
 import { Scene } from '@/containers/Scene'
 import '@/index.css'
 

@@ -1,12 +1,9 @@
-import React from 'react'
 import { Layer, Stage } from 'react-konva'
-import { PlaneCircleCoordinate } from '@/components/PlaneCircleCoordinate'
 import { appBaseConfig } from '@/configs/appBaseConfig'
 import { useWindowSize } from '@/hooks/useWindowSize'
-import { SinLine } from "@/components/SinLine"
-import { CosLine } from "@/components/CosLine"
-import { HelpLine } from "@/components/HelpLine"
-import { AngleArc } from "@/components/AngleArc"
+import { Cosine, Sine, PlaneCircleCoordinate } from "@/components"
+import { AlphaLine } from "@/components/PlaneCircleCoordinate/components/AlphaLine"
+import { AngleArch } from "@/components/PlaneCircleCoordinate/components/AngleArch"
 import { useVariables } from '@/hooks/useVariables'
 import { useAlphaAngle } from '@/hooks/useAlphaAngle'
 
@@ -16,8 +13,8 @@ export const Scene = () => {
   const [windowWidth, windowHeight] = useWindowSize()
   const alphaAngle = useAlphaAngle()
   const P = useVariables(radius, x, y)
-  const cosP = useVariables(radius, x, y, 'x')
-  const sinP = useVariables(radius, x, y, 'y')
+  const cosP = useVariables(radius, x, y, 'y')
+  const sinP = useVariables(radius, x, y, 'x')
 
   return (
     <Stage width={windowWidth} height={windowHeight}>
@@ -25,16 +22,16 @@ export const Scene = () => {
         <PlaneCircleCoordinate/>
       </Layer>
       <Layer>
-        <SinLine P={P} sinP={sinP} />
+        <Sine.CircleCoordinate P={P} sinP={sinP} />
       </Layer>
       <Layer>
-        <CosLine P={P} cosP={cosP} />
+        <Cosine.CircleCoordinate P={P} cosP={cosP} />
       </Layer>
       <Layer>
-        <AngleArc alphaAngle={alphaAngle} />
+        <AngleArch alphaAngle={alphaAngle} />
       </Layer>
       <Layer>
-        <HelpLine P={P} alphaAngle={alphaAngle} />
+        <AlphaLine P={P} alphaAngle={alphaAngle}/>
       </Layer>
     </Stage>
   )
