@@ -15,7 +15,12 @@ export const HelpLine = ({ P, alphaAngle }: HelperLineProps) => {
   return (
     <>
       <Line {...helpLineConfig} rotation={alphaAngle} />
-      <Text { ...helpLineTextConfig } x={textX - 20} y={textY - 5} text={`${KeyWord.alpha} = ${angle}${KeyWord.deg}`} />
+      <Text
+        { ...helpLineTextConfig }
+        x={textX - 20}
+        y={textY - 5}
+        text={`${KeyWord.alpha} = ${angle}${KeyWord.deg}`}
+      />
       <Circle {...helpLinePointsConfig} y={P.y} x={P.x} />
     </>
   )

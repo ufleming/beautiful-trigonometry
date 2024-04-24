@@ -18,5 +18,5 @@ export const cosLineTextConfig = {
   width: 40,
   height: 20,
   fill: themeColors.cosColor,
-  align: 'center'
+  align: 'center',
 }
